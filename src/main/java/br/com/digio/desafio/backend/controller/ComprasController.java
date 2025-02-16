@@ -77,8 +77,7 @@ public class ComprasController {
     @Operation(
             summary = "Retornar uma recomendação de vinho baseado nos tipos de vinho que o cliente mais compra.", tags = "Compras",
             responses = {
-                @ApiResponse(responseCode = "200", description = "Busca realizada com sucesso.",
-                        content = {@Content(mediaType = "application/json", schema = @Schema(implementation = String.class))}),
+                @ApiResponse(responseCode = "200", description = "Busca realizada com sucesso."),
                 @ApiResponse(responseCode = "400", description = "Erro ao buscar dados."),
                 @ApiResponse(responseCode = "500", description = "Erro interno.")
             }

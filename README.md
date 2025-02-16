@@ -198,24 +198,5 @@ Retorna uma recomendação de vinho baseada no histórico de compras do cliente.
 HTTP/1.1 200 OK
 Content-Type: application/json
 
-[
-  {
-    "nome": "Ian Joaquim Giovanni Santos",
-    "cpf": "96718391344",
-    "numeroCompras": 5,
-    "valorTotal": 7631.69
-  },
-  {
-    "nome": "Geraldo Pedro Julio Nascimento",
-    "cpf": "05870189179",
-    "numeroCompras": 5,
-    "valorTotal": 3416.87
-  },
-  {
-    "nome": "Andreia Emanuelly da Mata",
-    "cpf": "27737287426",
-    "numeroCompras": 6,
-    "valorTotal": 3210.19
-  }
-]
+Vinho recomendado: Tinto
 ```

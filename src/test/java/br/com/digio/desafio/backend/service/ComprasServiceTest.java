@@ -111,7 +111,7 @@ public class ComprasServiceTest {
 
         String resultado = comprasService.recomendacaoVinhoPorCliente("1051252612");
 
-        assertEquals("Branco", resultado);
+        assertEquals("Vinho recomendado: Branco", resultado);
     }
 
 

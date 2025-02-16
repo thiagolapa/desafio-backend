@@ -100,7 +100,7 @@ public class ComprasControllerTest {
     @Test
     public void testRecomendacaoVinhoPorCliente_Sucesso() throws Exception {
         String cpf = "12345678901"; // CPF válido
-        String recomendacao = "Vinho Tinto"; // Exemplo de recomendação
+        String recomendacao = "Vinho recomendado: Vinho Tinto"; // Exemplo de recomendação
         when(comprasService.recomendacaoVinhoPorCliente(cpf)).thenReturn(recomendacao);
         mockMvc.perform(get("/compras/recomendacao/cliente/{cpf}/tipo", cpf)
                         .contentType(MediaType.APPLICATION_JSON))

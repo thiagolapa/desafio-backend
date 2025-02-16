@@ -110,10 +110,10 @@ public class ComprasService {
 
         log.info("Tipo do vinho mais comprado e quantidade: {}", wineTypeCount);
 
-        return wineTypeCount.entrySet().stream()
+        return "Vinho recomendado: ".concat(wineTypeCount.entrySet().stream()
                 .max(Map.Entry.comparingByValue())
                 .map(Map.Entry::getKey)
-                .orElseThrow(() -> new ComprasNotFoundException("Não foi possível gerar recomendação."));
+                .orElseThrow(() -> new ComprasNotFoundException("Não foi possível gerar recomendação.")));
 
     }
 
